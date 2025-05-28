@@ -12,6 +12,195 @@
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
 }
 
+.top-navigation ul li a:hover {
+    color: #1f1f1f;
+  }
+
+  .teammate-social-icons > div:hover {
+    background-color: #737373;
+    cursor: pointer;
+  }
+
+  footer .social-icons div:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  .footer-contacts ul li a:hover {
+    color: white;
+  }
+
+  .teammates-list-wrapper {
+    flex-wrap: nowrap;
+  }
+
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 
+@media (max-width: 1023px) {
+  .top-navigation ul {
+    display: none;
+  }
+
+  .top-navigation .trigram {
+    display: block;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .portfolio-item {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .portfolio-img-wrapper {
+    width: 40%;
+  }
+
+  .teammate-img-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-item-info {
+    width: 60%;
+  }
+
+  .teammates-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .teammate {
+    min-width: calc(50% - 15px);
+    align-items: center;
+  }
+
+  .teammate-info {
+    align-items: center;
+  }
+
+  .teammate-social-icons {
+    justify-content: center;
+  }  
+
+  .social-icons div span {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-end;
+  }
+
+  .footer-contacts > div {
+    align-items: center;
+  }
+
+  footer .social-icons div {
+    justify-content: center;
+  }
+
+  footer .social-icons .icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width: 767px) {
+  .top-navigation ul {
+    display: none;
+  }
+
+  .top-navigation .trigram {
+    display: block;
+  }
+
+  .portfolio-list,
+  .portfolio-item {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .portfolio-img-wrapper,
+  .portfolio-item-info {
+    width: 100%;
+  }
+
+  .teammates-list-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .teammate {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .teammate-img-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .teammate-info {
+    align-items: center;
+  }
+
+  .teammate-social-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .footer-contacts > div {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .social-icons div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teammates-content .subtext {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+}
