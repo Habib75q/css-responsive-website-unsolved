@@ -12,6 +12,10 @@
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
 }
 
+.top-navigation .trigram {
+  display: none;
+}
+
 .top-navigation ul li a:hover {
   color: #1f1f1f;
 }
@@ -137,9 +141,11 @@ footer .social-icons div:hover {
 
     .portfolio-list,
     .portfolio-item {
+      flex: content;
       flex-direction: column;
       gap: 20px;
       align-items: center;
+      justify-content: center;
     }
 
     .portfolio-img-wrapper,
